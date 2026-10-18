@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#101329">
+<meta name="description" content="Game pembelajaran Truth or Dare Pendidikan Pancasila Kelas VII - Manusia, Norma, dan Interaksi Sosial.">
+<title>Misi Pancasila — Truth or Dare</title>
+<style>
+:root{--bg:#0d1022;--panel:#171b35;--panel2:#202646;--text:#f7f8ff;--muted:#aab2d2;--purple:#9c8cff;--pink:#ff7bbd;--cyan:#68e1fd;--green:#7be7b1;--gold:#ffd477;--line:rgba(255,255,255,.12);--shadow:0 24px 70px rgba(0,0,0,.3)}
+*{box-sizing:border-box}body{margin:0;background:radial-gradient(ellipse at 12% 0%,#29205a 0,transparent 35%),radial-gradient(ellipse at 90% 10%,#123c58 0,transparent 32%),var(--bg);color:var(--text);font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;min-height:100vh}
+button,input,select{font:inherit}button{cursor:pointer;border:0;transition:transform .16s,filter .16s}button:hover{filter:brightness(1.08);transform:translateY(-1px)}button:focus-visible,input:focus-visible,select:focus-visible{outline:3px solid var(--cyan);outline-offset:3px}
+.wrap{max-width:1120px;margin:auto;padding:24px 22px 50px}.topbar{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:42px}.brand{display:flex;align-items:center;gap:11px;font-weight:850;letter-spacing:.2px}.brandmark{display:grid;place-items:center;width:42px;height:42px;border-radius:14px;background:linear-gradient(135deg,var(--purple),var(--pink));box-shadow:0 8px 25px #9c8cff35;font-size:22px}.brand small{display:block;color:var(--muted);font-size:11px;letter-spacing:1.5px;font-weight:700;margin-top:2px}.top-actions{display:flex;gap:9px}.ghost{background:rgba(255,255,255,.07);border:1px solid var(--line);color:var(--text);padding:10px 14px;border-radius:12px;font-weight:700}.hero{display:grid;grid-template-columns:1.08fr .92fr;gap:34px;align-items:center;margin-bottom:34px}.eyebrow{display:inline-flex;align-items:center;gap:8px;color:var(--cyan);font-size:12px;font-weight:850;letter-spacing:1.8px;text-transform:uppercase}.dot{width:7px;height:7px;border-radius:50%;background:var(--green);box-shadow:0 0 14px var(--green)}h1{font-size:clamp(38px,6vw,68px);line-height:.99;letter-spacing:-2.8px;margin:18px 0 18px;font-weight:900}.gradient{background:linear-gradient(100deg,var(--purple),var(--pink),var(--gold));color:transparent;background-clip:text}.hero p{color:var(--muted);font-size:16px;line-height:1.75;max-width:550px;margin:0 0 24px}.primary{background:linear-gradient(105deg,#8f7bff,#ed79c6);color:white;padding:14px 20px;border-radius:14px;font-weight:850;box-shadow:0 12px 28px #8f7bff30}.hero-actions{display:flex;gap:10px;flex-wrap:wrap}.hero-art{position:relative;min-height:330px;display:grid;place-items:center}.orbit{position:absolute;width:285px;height:285px;border:1px solid #ffffff1b;border-radius:50%;box-shadow:0 0 70px #897cff14}.orbit:before,.orbit:after{content:"";position:absolute;border:1px dashed #ffffff22;border-radius:50%;inset:25px}.orbit:after{inset:-20px}.float-card{position:absolute;width:175px;height:225px;border-radius:22px;padding:19px;box-shadow:var(--shadow);display:flex;flex-direction:column;justify-content:space-between;border:1px solid #ffffff44}.float-card .label{font-size:11px;font-weight:900;letter-spacing:2px}.float-card .big{font-size:40px;font-weight:950;letter-spacing:-2px}.float-card .mini{font-size:12px;line-height:1.5;opacity:.85}.truth-card{background:linear-gradient(145deg,#6054ba,#302b65);transform:rotate(-12deg) translate(-54px,3px)}.dare-card{background:linear-gradient(145deg,#e86eb1,#773e9c);transform:rotate(11deg) translate(57px,8px)}.spark{position:absolute;font-size:24px;color:var(--gold)}.s1{top:28px;right:22%}.s2{bottom:40px;left:16%;color:var(--cyan)}.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin:20px 0 35px}.stat{background:rgba(255,255,255,.045);border:1px solid var(--line);padding:17px;border-radius:17px}.stat strong{display:block;font-size:25px;letter-spacing:-1px}.stat span{display:block;color:var(--muted);font-size:12px;margin-top:5px}.section-head{display:flex;justify-content:space-between;align-items:end;gap:15px;margin:30px 0 16px}.section-head h2{margin:0;font-size:24px;letter-spacing:-.7px}.section-head p{margin:6px 0 0;color:var(--muted);font-size:13px}.levels{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}.level{border:1px solid var(--line);background:linear-gradient(145deg,#ffffff0b,#ffffff03);padding:18px;border-radius:18px;text-align:left;color:var(--text);min-height:138px}.level.active{border-color:var(--purple);box-shadow:0 0 0 1px #9c8cff33 inset;background:#9c8cff14}.level .c{font-size:11px;font-weight:900;letter-spacing:1px;color:var(--cyan)}.level b{display:block;font-size:17px;margin:8px 0 5px}.level small{color:var(--muted);line-height:1.4}.game-panel{margin-top:28px;background:linear-gradient(145deg,#191e3b,#12162d);border:1px solid var(--line);border-radius:25px;padding:24px;box-shadow:var(--shadow)}.game-top{display:flex;align-items:center;justify-content:space-between;gap:15px;flex-wrap:wrap}.pills{display:flex;gap:8px;flex-wrap:wrap}.pill{font-size:11px;letter-spacing:.8px;text-transform:uppercase;font-weight:900;padding:8px 11px;border-radius:99px;background:#9c8cff20;color:#c9c0ff;border:1px solid #9c8cff38}.pill.type-dare{background:#ff7bbd18;color:#ffaad4;border-color:#ff7bbd40}.score{color:var(--muted);font-size:13px}.score strong{color:var(--gold);font-size:17px}.game-grid{display:grid;grid-template-columns:.82fr 1.18fr;gap:24px;align-items:stretch;margin-top:22px}.card-stage{min-height:310px;display:grid;place-items:center;background:radial-gradient(ellipse,#8d78ff22,transparent 70%);border-radius:20px}.playing-card{width:min(100%,280px);min-height:300px;border-radius:22px;padding:23px;display:flex;flex-direction:column;justify-content:space-between;border:1px solid #ffffff4a;background:linear-gradient(150deg,#6156bb,#282650);box-shadow:0 22px 45px #0004;position:relative;overflow:hidden}.playing-card:after{content:"";position:absolute;width:190px;height:190px;border:1px solid #ffffff1c;border-radius:50%;right:-90px;top:-70px;box-shadow:0 0 0 20px #ffffff06,0 0 0 40px #ffffff04}.playing-card.dare{background:linear-gradient(150deg,#d963a7,#54336f)}.card-top{display:flex;justify-content:space-between;align-items:center;font-size:11px;letter-spacing:1.5px;font-weight:900}.card-symbol{font-size:39px;margin:18px 0 8px}.card-question{font-size:19px;line-height:1.45;font-weight:800;position:relative;z-index:1}.card-bottom{display:flex;justify-content:space-between;align-items:center;color:#ffffffb5;font-size:11px}.card-side{display:flex;flex-direction:column;justify-content:center}.card-side h3{font-size:25px;letter-spacing:-.8px;margin:0 0 10px}.card-side p{color:var(--muted);line-height:1.7;font-size:14px;margin:0 0 20px}.turn-fields{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:15px}.field label{display:block;color:var(--muted);font-size:11px;font-weight:800;letter-spacing:.8px;text-transform:uppercase;margin:0 0 7px}.field input,.field select{width:100%;border:1px solid var(--line);background:#0f1329;color:var(--text);padding:11px 12px;border-radius:11px}.game-actions{display:flex;gap:9px;flex-wrap:wrap}.secondary{background:#ffffff0c;color:var(--text);border:1px solid var(--line);padding:12px 15px;border-radius:12px;font-weight:800}.reveal{margin-top:13px;padding:13px 14px;border-radius:12px;background:#7be7b112;border:1px solid #7be7b133;color:#c6f9df;font-size:13px;line-height:1.6;display:none}.reveal.show{display:block}.notice{margin-top:18px;color:var(--muted);font-size:12px;line-height:1.6}.teacher{display:none;margin-top:18px;background:#10142b;border:1px solid var(--line);border-radius:18px;padding:18px}.teacher.show{display:block}.teacher h3{margin:0 0 13px}.teacher-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}.teacher .field{margin-bottom:12px}.teacher-actions{display:flex;gap:8px;flex-wrap:wrap}.rubric{margin-top:14px;border-top:1px solid var(--line);padding-top:12px;color:var(--muted);font-size:12px;line-height:1.7}.footer{margin-top:28px;text-align:center;color:#8189ad;font-size:12px}.toast{position:fixed;bottom:20px;left:50%;transform:translate(-50%,20px);background:#f7f8ff;color:#17172c;padding:12px 18px;border-radius:13px;font-size:13px;font-weight:800;box-shadow:var(--shadow);opacity:0;pointer-events:none;transition:.25s;z-index:10}.toast.show{opacity:1;transform:translate(-50%,0)}.hidden{display:none!important}
+@media(max-width:780px){.hero{grid-template-columns:1fr;gap:0}.hero-art{min-height:285px;order:-1}.hero-art .orbit{width:230px;height:230px}.float-card{width:145px;height:190px}.float-card .big{font-size:32px}.topbar{margin-bottom:24px}.stats{grid-template-columns:repeat(2,1fr)}.levels{grid-template-columns:repeat(2,1fr)}.game-grid{grid-template-columns:1fr}.card-stage{min-height:320px}.teacher-grid{grid-template-columns:1fr 1fr}h1{letter-spacing:-1.8px}}
+@media(max-width:440px){.wrap{padding:17px 14px 35px}.top-actions .ghost{padding:9px 10px;font-size:12px}.brand{font-size:14px}.brandmark{width:37px;height:37px}.levels{gap:8px}.level{padding:13px;min-height:130px}.game-panel{padding:15px}.turn-fields{grid-template-columns:1fr}.teacher-grid{grid-template-columns:1fr}.hero-art{min-height:250px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="topbar">
+    <div class="brand"><div class="brandmark">✦</div><div>MISI PANCASILA<small>TRUTH OR DARE • KELAS VII</small></div></div>
+    <div class="top-actions"><button class="ghost" id="teacherToggle">⚙ Mode Guru</button><button class="ghost" id="resetBtn">↻ Reset</button></div>
+  </header>
+  <main>
+    <section class="hero">
+      <div>
+        <div class="eyebrow"><span class="dot"></span> Belajar sambil bermain</div>
+        <h1>Berani jawab.<br><span class="gradient">Berani beraksi.</span></h1>
+        <p>Uji pemahamanmu tentang manusia, norma, dan interaksi sosial. Pilih kartu Truth atau Dare, selesaikan misi, dan kumpulkan poin bersama teman sekelas!</p>
+        <div class="hero-actions"><button class="primary" id="startBtn">Mulai permainan <span aria-hidden="true">→</span></button><button class="ghost" id="howBtn">Cara bermain</button></div>
+      </div>
+      <div class="hero-art" aria-label="Ilustrasi kartu Truth dan Dare">
+        <div class="orbit"></div><span class="spark s1">✦</span><span class="spark s2">✧</span>
+        <div class="float-card truth-card"><div class="label">KARTU • JUJUR</div><div><div class="big">TRUTH</div><div class="mini">Pikirkan. Jelaskan.<br>Berikan alasanmu.</div></div><div class="label">LEVEL C2—C5</div></div>
+        <div class="float-card dare-card"><div class="label">KARTU • TANTANGAN</div><div><div class="big">DARE</div><div class="mini">Buktikan pemahaman<br>melalui aksi nyata.</div></div><div class="label">LEVEL C2—C5</div></div>
+      </div>
+    </section>
+    <section class="stats" aria-label="Statistik permainan">
+      <div class="stat"><strong>38</strong><span>Kartu dari materi PDF</span></div><div class="stat"><strong>4</strong><span>Level berpikir C2–C5</span></div><div class="stat"><strong id="scoreStat">0</strong><span>Total poin terkumpul</span></div><div class="stat"><strong id="playedStat">0</strong><span>Kartu dimainkan</span></div>
+    </section>
+    <section id="levelsSection">
+      <div class="section-head"><div><h2>Pilih level tantangan</h2><p>Mulai dari memahami, lalu naik ke analisis dan evaluasi.</p></div></div>
+      <div class="levels">
+        <button class="level active" data-level="C2"><span class="c">LEVEL C2</span><b>Memahami</b><small>Konsep manusia, kebutuhan, dan norma.</small></button>
+        <button class="level" data-level="C3"><span class="c">LEVEL C3</span><b>Mengaplikasikan</b><small>Praktik norma dalam kehidupan sehari-hari.</small></button>
+        <button class="level" data-level="C4"><span class="c">LEVEL C4</span><b>Menganalisis</b><small>Analisis sebab-akibat dan masalah sosial.</small></button>
+        <button class="level" data-level="C5"><span class="c">LEVEL C5</span><b>Mengevaluasi</b><small>Penilaian kritis, solusi, dan refleksi.</small></button>
+      </div>
+    </section>
+    <section class="game-panel" id="game">
+      <div class="game-top"><div class="pills"><span class="pill" id="levelPill">LEVEL C2</span><span class="pill" id="typePill">TRUTH</span></div><div class="score">Skor tim: <strong id="score">0</strong> poin &nbsp;·&nbsp; Kartu: <strong id="played">0</strong></div></div>
+      <div class="game-grid">
+        <div class="card-stage"><div class="playing-card" id="playingCard">
+          <div class="card-top"><span id="cardType">TRUTH</span><span id="cardLevel">C2</span></div>
+          <div><div class="card-symbol" id="cardSymbol">◈</div><div class="card-question" id="question">Apa yang dimaksud dengan manusia sebagai makhluk individu?</div></div>
+          <div class="card-bottom"><span>MISI PANCASILA</span><span id="cardNumber">KARTU 01</span></div>
+        </div></div>
+        <div class="card-side">
+          <h3 id="actionTitle">Saatnya menjawab!</h3>
+          <p id="actionDesc">Bacalah pertanyaan pada kartu, lalu sampaikan jawabanmu dengan jelas. Teman satu kelompok boleh memberi tanggapan setelah kamu selesai.</p>
+          <div class="turn-fields">
+            <div class="field"><label for="teamName">Nama pemain / tim</label><input id="teamName" placeholder="Contoh: Tim Garuda" maxlength="40"></div>
+            <div class="field"><label for="cardKind">Jenis kartu</label><select id="cardKind"><option value="all">Acak Truth / Dare</option><option value="Truth">Truth saja</option><option value="Dare">Dare saja</option></select></div>
+          </div>
+          <div class="game-actions"><button class="primary" id="drawBtn">Ambil kartu berikutnya ↗</button><button class="secondary" id="truthBtn">Truth</button><button class="secondary" id="dareBtn">Dare</button></div>
+          <div class="game-actions" style="margin-top:9px"><button class="secondary" id="correctBtn">✓ Berhasil +10</button><button class="secondary" id="partialBtn">◐ Sebagian +5</button><button class="secondary" id="skipBtn">Lewati kartu</button><button class="secondary" id="answerBtn">Rubrik penilaian</button></div>
+          <div class="reveal" id="rubricReveal"><b>Panduan penilaian:</b><br>• C2–C3: ketepatan konsep dan contoh nyata.<br>• C4–C5: kedalaman alasan, argumentasi, solusi, dan refleksi.<br>Guru menentukan apakah jawaban atau aksi sudah memenuhi kriteria.</div>
+          <div class="notice">Ingat: tantangan harus aman, sopan, tidak mempermalukan teman, dan boleh dilewati jika membuat pemain tidak nyaman. Guru menjadi fasilitator.</div>
+        </div>
+      </div>
+      <div class="teacher" id="teacherPanel">
+        <h3>⚙ Panel pengaturan guru</h3>
+        <div class="teacher-grid">
+          <div class="field"><label for="roundMode">Urutan level</label><select id="roundMode"><option value="free">Bebas memilih</option><option value="progressive">Berjenjang C2 → C3 → C4 → C5</option></select></div>
+          <div class="field"><label for="targetScore">Target poin tim</label><input type="number" id="targetScore" min="10" max="500" step="10" value="50"></div>
+          <div class="field"><label for="timerSelect">Durasi per kartu</label><select id="timerSelect"><option value="30">30 detik</option><option value="60" selected>60 detik</option><option value="90">90 detik</option><option value="0">Tanpa timer</option></select></div>
+        </div>
+        <div class="teacher-actions"><button class="primary" id="timerBtn">▶ Mulai timer</button><button class="secondary" id="stopTimerBtn">■ Hentikan timer</button><button class="secondary" id="projectBtn">⛶ Mode proyektor</button><button class="secondary" id="exportBtn">⇩ Unduh rekap CSV</button></div>
+        <div class="rubric" id="timerStatus">Timer belum berjalan. Gunakan panel ini untuk mengatur sesi kelas.</div>
+      </div>
+    </section>
+    <div class="footer">Dibuat sebagai media pembelajaran • Pendidikan Pancasila Kelas VII • Materi: Manusia, Norma, dan Interaksi Sosial</div>
+  </main>
+</div>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+<script>
+const cards = [
+{level:"C2",type:"Truth",q:"Apa arti manusia diciptakan sebagai makhluk Tuhan Yang Maha Esa yang paling sempurna?"},
+{level:"C2",type:"Truth",q:"Apa yang dimaksud dengan manusia sebagai makhluk individu?"},
+{level:"C2",type:"Truth",q:"Apa perbedaan antara kebutuhan fisik dan kebutuhan nonfisik pada manusia?"},
+{level:"C2",type:"Truth",q:"Apa yang dimaksud dengan interaksi sosial menurut pemahamanmu?"},
+{level:"C2",type:"Truth",q:"Sebutkan tiga ciri utama terjadinya interaksi sosial dalam masyarakat!"},
+{level:"C2",type:"Truth",q:"Apa perbedaan mendasar antara kebutuhan dan keinginan manusia?"},
+{level:"C2",type:"Truth",q:"Jelaskan pengertian norma menurut salah satu ahli yang kamu ketahui!"},
+{level:"C2",type:"Truth",q:"Sebutkan tiga fungsi utama norma dalam kehidupan bermasyarakat!"},
+{level:"C2",type:"Dare",q:"Jelaskan dengan bahasamu sendiri mengapa manusia disebut sebagai makhluk sosial!"},
+{level:"C2",type:"Dare",q:"Sebutkan 3 contoh kebutuhan fisik manusia yang wajib dipenuhi setiap hari!"},
+{level:"C2",type:"Dare",q:"Sebutkan 3 contoh kebutuhan nonfisik yang diperlukan manusia agar hidup bahagia!"},
+{level:"C2",type:"Dare",q:"Peragakan dan sebutkan 2 contoh norma kesopanan yang berlaku di lingkungan sekolah!"},
+{level:"C3",type:"Truth",q:"Berikan satu pengalaman nyata ketika kamu memenuhi kebutuhan nonfisik, seperti rasa aman atau penghargaan, di sekolah!"},
+{level:"C3",type:"Truth",q:"Bagaimana cara kamu menerapkan norma kesopanan saat berbicara dengan guru di kelas?"},
+{level:"C3",type:"Truth",q:"Apa contoh tindakan nyata dalam kehidupan sehari-hari sebagai wujud peranmu sebagai anak di rumah?"},
+{level:"C3",type:"Truth",q:"Berikan contoh tindakan menaati norma kebersihan yang biasa kamu lakukan di lingkungan sekolah!"},
+{level:"C3",type:"Dare",q:"Peragakan cara meminta izin kepada guru ketika hendak masuk ke ruang kelas dengan menerapkan norma kesopanan!"},
+{level:"C3",type:"Dare",q:"Praktikkan sikap mendengarkan pendapat teman saat berdiskusi tanpa memotong pembicaraan!"},
+{level:"C3",type:"Dare",q:"Ambil satu sampah di sekitar tempat dudukmu dan buanglah ke tempat sampah sebagai wujud penerapan norma!"},
+{level:"C3",type:"Dare",q:"Berikan ucapan terima kasih dan apresiasi secara langsung kepada teman sebangkumu!"},
+{level:"C4",type:"Truth",q:"Analisis mengapa manusia disebut makhluk monodualis (individu sekaligus sosial). Apa dampaknya jika hanya mementingkan diri sendiri?"},
+{level:"C4",type:"Truth",q:"Jika seseorang terus-menerus memprioritaskan keinginan di atas kebutuhan, analisis konsekuensi yang akan dihadapinya!"},
+{level:"C4",type:"Truth",q:"Bandingkan efektivitas sanksi norma kesopanan dengan sanksi norma hukum dalam menjaga kedisiplinan di sekolah!"},
+{level:"C4",type:"Truth",q:"Analisis hubungan antara penggunaan akal pikiran manusia dengan terciptanya norma atau aturan di masyarakat!"},
+{level:"C4",type:"Truth",q:"Mengapa interaksi sosial yang timbal balik penting untuk mencegah konflik di kelas? Analisislah!"},
+{level:"C4",type:"Dare",q:"Analisis secara lisan selama 1 menit fenomena siswa yang sibuk dengan HP saat berkumpul, lalu berikan solusi konkret!"},
+{level:"C4",type:"Dare",q:"Kritisi satu perilaku kurang sopan yang sering terjadi di sekolah, lalu peragakan bentuk perbaikan idealnya!"},
+{level:"C4",type:"Dare",q:"Analisis dua faktor utama penyebab siswa terlambat datang ke sekolah dan berikan satu rekomendasi pencegahan!"},
+{level:"C4",type:"Dare",q:"Peragakan dan jelaskan perbandingan komunikasi empati (menghargai) dengan komunikasi apatis dalam interaksi sosial!"},
+{level:"C5",type:"Truth",q:"Evaluasi dampak kemajuan teknologi terhadap kualitas interaksi sosial secara langsung di kalangan remaja!"},
+{level:"C5",type:"Truth",q:"Evaluasi aturan atau norma di sekolahmu yang menurutmu paling kurang efektif. Mengapa dan apa solusinya?"},
+{level:"C5",type:"Truth",q:"Seseorang melanggar norma demi membantu temannya yang kesusahan. Apakah tindakan itu dapat dibenarkan? Berikan alasan!"},
+{level:"C5",type:"Truth",q:"Evaluasi kebiasaan gotong royong di lingkungan tempat tinggalmu. Apakah masih efektif atau mulai luntur? Mengapa?"},
+{level:"C5",type:"Truth",q:"Evaluasi peranmu sebagai warga sekolah dalam menciptakan ketertiban. Jelaskan bukti bahwa kamu sudah atau belum optimal!"},
+{level:"C5",type:"Dare",q:"Simulasikan cara menyelesaikan konflik secara adil antara dua teman yang berebut fasilitas kelas, lalu evaluasi solusinya!"},
+{level:"C5",type:"Dare",q:"Rancang dan sampaikan gagasan norma atau aturan baru yang mendesak untuk meningkatkan kedisiplinan kelas!"},
+{level:"C5",type:"Dare",q:"Sampaikan argumen kritis selama 30 detik tentang mengapa siswa wajib membedakan kebutuhan dan keinginan!"},
+{level:"C5",type:"Dare",q:"Evaluasi diskusi kelompok hari ini: sebutkan satu kelebihan dan satu hal yang wajib diperbaiki dalam etika berdiskusi!"}
+];
+const levelNames={C2:"Memahami",C3:"Mengaplikasikan",C4:"Menganalisis",C5:"Mengevaluasi"};
+let currentLevel="C2",currentCard=cards[1],score=0,played=0,history=[],seen=new Set(),timer=null,timeLeft=60;
+const $=id=>document.getElementById(id);
+function toast(msg){const t=$("toast");t.textContent=msg;t.classList.add("show");setTimeout(()=>t.classList.remove("show"),2300)}
+function updateStats(){$("score").textContent=score;$("scoreStat").textContent=score;$("played").textContent=played;$("playedStat").textContent=played}
+function showCard(card){currentCard=card;$("levelPill").textContent="LEVEL "+card.level+" • "+levelNames[card.level];$("typePill").textContent=card.type;$("typePill").className="pill "+(card.type==="Dare"?"type-dare":"");$("playingCard").className="playing-card "+(card.type==="Dare"?"dare":"");$("cardType").textContent=card.type.toUpperCase();$("cardLevel").textContent=card.level;$("cardSymbol").textContent=card.type==="Truth"?"◈":"✦";$("question").textContent=card.q;$("cardNumber").textContent="KARTU "+String(cards.indexOf(card)+1).padStart(2,"0");$("actionTitle").textContent=card.type==="Truth"?"Saatnya menjawab!":"Tantangan dimulai!";$("actionDesc").textContent=card.type==="Truth"?"Bacalah pertanyaan, lalu sampaikan jawaban dengan jelas. Teman satu kelompok boleh memberi tanggapan setelah kamu selesai.":"Lakukan tantangan dengan aman dan penuh percaya diri. Mintalah bantuan teman atau guru bila diperlukan."; $("rubricReveal").classList.remove("show")}
+function draw(type="all"){let pool=cards.filter(c=>c.level===currentLevel&&(type==="all"||c.type===type));let unseen=pool.filter(c=>!seen.has(cards.indexOf(c)));if(!unseen.length){unseen=pool;pool.forEach(c=>seen.delete(cards.indexOf(c)));toast("Kartu level ini diacak ulang.");}if(!unseen.length)return;const card=unseen[Math.floor(Math.random()*unseen.length)];seen.add(cards.indexOf(card));showCard(card);played++;history.push({time:new Date().toLocaleString("id-ID"),team:$("teamName").value||"Belum diisi",level:card.level,type:card.type,question:card.q,result:"Diambil",points:0});updateStats();if($("roundMode").value==="progressive"&&played%4===0){const order=["C2","C3","C4","C5"];currentLevel=order[Math.min(3,Math.floor(played/4))];document.querySelectorAll(".level").forEach(b=>b.classList.toggle("active",b.dataset.level===currentLevel));toast("Progres berjenjang: level "+currentLevel)}}
+function setLevel(level){currentLevel=level;document.querySelectorAll(".level").forEach(b=>b.classList.toggle("active",b.dataset.level===level));draw($("cardKind").value==="all"?"all":$("cardKind").value);$("game").scrollIntoView({behavior:"smooth",block:"start"})}
+document.querySelectorAll(".level").forEach(b=>b.addEventListener("click",()=>setLevel(b.dataset.level)));
+$("drawBtn").onclick=()=>draw($("cardKind").value==="all"?"all":$("cardKind").value);$("truthBtn").onclick=()=>draw("Truth");$("dareBtn").onclick=()=>draw("Dare");
+function award(points,result){if(!currentCard){toast("Ambil kartu terlebih dahulu.");return}score+=points;const last=history[history.length-1];if(last){last.result=result;last.points=points;last.team=$("teamName").value||"Belum diisi"}updateStats();toast(result+" • +"+points+" poin");const target=Number($("targetScore").value)||50;if(score>=target)toast("🎉 Target tim tercapai! Hebat!");}
+$("correctBtn").onclick=()=>award(10,"Berhasil");$("partialBtn").onclick=()=>award(5,"Sebagian");$("skipBtn").onclick=()=>{if(history.length)history[history.length-1].result="Dilewati";draw($("cardKind").value==="all"?"all":$("cardKind").value);toast("Kartu dilewati. Tetap semangat!")};
+$("answerBtn").onclick=()=>$("rubricReveal").classList.toggle("show");
+$("teacherToggle").onclick=()=>{$("teacherPanel").classList.toggle("show");$("teacherPanel").scrollIntoView({behavior:"smooth",block:"nearest"})};
+$("startBtn").onclick=()=>$("game").scrollIntoView({behavior:"smooth",block:"start"});
+$("howBtn").onclick=()=>alert("CARA BERMAIN\\n1. Bentuk kelompok berisi 4–5 siswa.\\n2. Pilih level dan jenis kartu Truth atau Dare.\\n3. Pemain menjawab atau menyelesaikan tantangan.\\n4. Guru menilai: berhasil +10, sebagian +5, atau lewati tanpa penalti.\\n5. Mulai dari C2–C3, lalu lanjut C4–C5.\\n\\nJaga permainan tetap aman, sopan, dan saling menghargai.");
+$("resetBtn").onclick=()=>{if(confirm("Reset skor, jumlah kartu, dan riwayat permainan?")){score=0;played=0;history=[];seen.clear();updateStats();draw("all");toast("Permainan direset.")}};
+$("timerBtn").onclick=()=>{clearInterval(timer);timeLeft=Number($("timerSelect").value);if(!timeLeft){$("timerStatus").textContent="Timer dinonaktifkan.";return}const tick=()=>{$("timerStatus").textContent="⏱ Sisa waktu: "+timeLeft+" detik";if(timeLeft<=0){clearInterval(timer);timer=null;$("timerStatus").textContent="⏰ Waktu habis! Silakan refleksi jawaban bersama guru.";toast("Waktu habis!")}timeLeft--};tick();timer=setInterval(tick,1000)};
+$("stopTimerBtn").onclick=()=>{clearInterval(timer);timer=null;$("timerStatus").textContent="Timer dihentikan."};
+$("projectBtn").onclick=()=>{document.body.classList.toggle("projector");if(document.body.classList.contains("projector")){document.querySelector(".hero").classList.add("hidden");$("levelsSection").classList.add("hidden");$("game").scrollIntoView({behavior:"smooth"});toast("Mode proyektor aktif. Tekan tombol lagi untuk keluar.")}else{document.querySelector(".hero").classList.remove("hidden");$("levelsSection").classList.remove("hidden");toast("Mode proyektor dinonaktifkan.")}};
+$("exportBtn").onclick=()=>{if(!history.length){toast("Belum ada riwayat untuk diunduh.");return}const rows=[["Waktu","Tim","Level","Jenis","Pertanyaan","Hasil","Poin"],...history.map(h=>[h.time,h.team,h.level,h.type,h.question,h.result,h.points])];const csv=rows.map(r=>r.map(v=>'"'+String(v).replace(/"/g,'""')+'"').join(",")).join("\r\n");const blob=new Blob(["\ufeff"+csv],{type:"text/csv;charset=utf-8;"});const a=document.createElement("a");a.href=URL.createObjectURL(blob);a.download="rekap-misi-pancasila.csv";a.click();URL.revokeObjectURL(a.href)};
+showCard(currentCard);updateStats();
+</script>
+</body>
+</html>
